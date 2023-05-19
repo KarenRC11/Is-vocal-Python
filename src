@@ -10,3 +10,19 @@ def es_vocal(x):
 print("Ingresa un caracter: ")
 x = input()
 print(es_vocal(x))
+------------------------------------------------------------------------------------------------------
+#Funcion que devuelve si el caracter de una cadena dada es vocal o no es vocal
+def vocales(c):
+    for i in c:
+        if i == "a" or i == "e" or  i == "i" or i =="o" or i =="u":
+            print("El elemento " + i + " es vocal")
+        elif i == "A" or i == "E" or  i == "I" or i =="O" or i =="U":
+                print("El elemento " + i + " es vocal")
+        elif i == " ":
+            print("Es un espacio")
+        else:
+            print("El elemento " + i + " NO es vocal")
+
+print("Ingresa una cadena")
+cad = str(input())
+vocales(cad)
